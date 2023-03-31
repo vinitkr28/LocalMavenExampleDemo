@@ -1,0 +1,35 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+/*buildscript {
+    repositories {
+        mavenCentral()
+
+        print("*** \$\$ repositories [START] \$\$ ***\n")
+        print(" 1. buildDir: $buildDir \n")
+        print(" 2. projectDir: $projectDir \n")
+        print(" 3. rootProject.name: ${rootProject.name} \n")
+        print(" 4. project.rootProject: ${project.rootProject} \n")
+        print(" 5. rootDir: ${project.rootDir} \n")
+        print(" 6. projectDir: ${project.projectDir} \n")
+        print(" 7. project dir(user.dir): ${System.getProperty("user.dir")} \n")
+        print(" 8. project(toString): ${project.toString()} \n")
+        print("*** \$\$ repositories [END] \$\$ ***\n")
+
+        print("url ${project.rootDir}\\localMavenLib\\build\\localMavenLib_repository\n")
+        var String repo_path = "${project.rootDir}\\localMavenLib\\build\\localMavenLib_repository"
+        if (new File(repo_path).exists()){
+            print("repo path exists")
+        } else {
+            print("repo path not exists")
+        }
+
+        maven {
+            url "${project.rootDir}/localMavenLib/build/localMavenLib_repository"
+        }
+    }
+}*/
+
+plugins {
+    id 'com.android.application' version '7.1.3' apply false
+    id 'com.android.library' version '7.1.3' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+}
