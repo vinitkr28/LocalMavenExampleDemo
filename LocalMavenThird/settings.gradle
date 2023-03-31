@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        //If I will add the below line then this is working. But not possible to add all the dependencies used in localMavenFirstLib
+//        maven { url "../RepoLocalMavenFirst" }
+        maven { url "../RepoLocalMavenSecond" }
+    }
+}
+rootProject.name = "LocalMavenThird"
+include ':localMavenThirdLibTest'
